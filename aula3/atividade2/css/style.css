@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-family: cursive;
+    font-size: 1.30rem;
+    text-align: center;
+    color: white;
+    background-color: mediumseagreen;
+    padding: 1.100rem ;
+}
+
+body {
+    background-color: #F9F9EE;
+}
+
