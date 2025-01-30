@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* três colunas de largura igual */
+    grid-gap: 10px; /* espaçamento entre as células da grade */
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}

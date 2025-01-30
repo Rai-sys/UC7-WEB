@@ -1,0 +1,8 @@
+body{
+    background-color: #9999;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
