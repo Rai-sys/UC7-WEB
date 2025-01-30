@@ -18,20 +18,20 @@ body {
 main {
     width: 90%;
     text-align: center;
-    margin: 20px 0 0 65px;
-    padding: 10px;
+    margin: 1.25rem 0 0 4.063rem;
+    padding: 0.625rem;
 }
 
 .produto {
     display: inline-block;
     height: 21rem;
     padding: 1.05rem ;
-    margin: 5px 20px 1.40rem 0;
+    margin: 0.313rem 1.25rem 1.40rem 0;
     border-radius: 0.313rem;
     color: #213811;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #a4d683;
-    box-shadow: 2px 2px 5px rgb(219, 219, 203);
+    box-shadow: 0.25rem 0.25rem 0.3rem rgb(219, 219, 203);
 }
 /* #a7d986 */
 /* t= 0, r= 20, b=1.40, l=0*/
@@ -39,22 +39,22 @@ main {
 
 
 .produto #preco {
-    padding: 10px;
-    font-size: 19px;
+    padding: 0.625rem;
+    font-size: 1.188rem;
     display: block;
     font-weight: bold;
     background-color: #5dad27;
-    padding: 2px 0 0;
-    margin: 10px 0 0 75px;
-    width: 100px;
-    border-radius: 5px;
+    padding: 0.125rem 0 0;
+    margin: 0.625rem 0 0 4.688rem;
+    width: 6.25rem;
+    border-radius: 0.313rem;
 }
 
 footer{
     background-color: mediumseagreen;
     width: 100%;
-    height: 10px;
-    padding: 20px;
+    height: 0.625rem;
+    padding: 1.25rem;
     position: absolute;
     bottom: 0;
     left: 0;
