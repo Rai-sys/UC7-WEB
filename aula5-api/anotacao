@@ -1,0 +1,14 @@
+1- instalação do node modules e os dois arquivos do package json
+
+2- site: express docs
+   = introdução
+       = hello word (vai estar o codigo que foi colado no arquivo app.js)
+
+3- da um 'node app.js' pra rodar
+    = colocando 'localhost:3000' em um navegador, vai aparecer o 'Hello World' que está no codigo
+
+
+=== historico do terminal ===
+1- npm init -y
+2- npm install express --save
+3- node app.js
