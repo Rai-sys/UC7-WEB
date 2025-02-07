@@ -33,41 +33,43 @@ body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     font-family: var(--fonte-padrao);
-/*    padding: var(--padding-header); */
-    /* text-align: center;  */
 }
 
+/* HEADER - TEMA ROCK */
 header {
     text-align: center;
     background-color: var(--cor-header);
     padding: var(--padding-header);
 }
 
-body header h1 {
+header h1 {
     text-align: center;
     margin-top: 20px;
 }
 
-body header img {
+header img {
     align-items: center;
     margin-top: 20px;
 }
+
+/* MAIN - BANDA */
 main {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--cor-main);
     padding: var(--padding-padrao);
-    margin: var(--margin-padrao);
+    margin: 25px 0px 20px 120px;
     width: var(--largura-max-main);
+    height: 270px;
 }
-
-
 section {
     background-color: var(--cor-secao);
     padding: var(--padding-padrao);
     margin: var(--margin-padrao);
+    /* align-items: center; */
     border-radius: var(--border-radius);
-    align-items: center;
+    border-color: var(--cor-borda);
+    border: var(--border-size) solid;
 }
 
 .band {
@@ -77,25 +79,42 @@ section {
 
 img {
     flex-shrink: 0;
-    margin-top: 17px;
+    margin-top: 40px;
+    width: var(--largura-imagens);
+    height: var(--altura-imagens);
 }
+
+/* TEXTO DA MAIN */
 h2{
     font-size: var(--tamanho-h2);
-    padding-bottom: 10px;
+    padding-bottom: 18px;
 }
 
 p {
     font-size: var(--tamanho-p);
 }
+
+/* ASIDE - NOTICIAS */
+aside {
+    background-color: var(--cor-header);
+    padding: var(--padding-padrao);
+    margin: var(--margin-padrao);
+    border-radius: var(--border-radius);
+    border-color: var(--cor-borda);
+    border: var(--border-size) solid;
+}
+aside p {
+    padding-bottom: 10px;
+}
+
+/* FOOTER */
 footer {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-header);
+    padding: var(--padding-padrao);
+    margin-top: 55px;
+    text-align: center;
 }
 
-
-img {
-    width: var(--largura-imagens);
-    height: var(--altura-imagens);
-}
 /*
 body {
     background-color: var(--cor-fundo);
