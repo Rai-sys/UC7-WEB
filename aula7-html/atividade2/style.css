@@ -1,6 +1,6 @@
 :root {
     --cor-fundo: white;
-    --cor-header-footer:  #0D3B4C;
+    --cor-header-footer:  #0d3b4a;
     --cor-texto-header: white;
     --cor-texto: #15627F;
 
@@ -90,25 +90,127 @@ nav a:hover {
 }
 /* CABEÇALHO - FIM */
 
+/* MAIN  - COMEÇO */
+main {
+    margin: 0px 20px 10px 20px;
+}
 
-main .h1 {
+#sobre {
     display: flex;
+    align-items: center;
 
 }
-main p {
+
+.sobre-texto {
     display: flex;
+    flex-direction: column;
+    font-size: large;
     text-align: left;
-    word-wrap: break-word;
-    width: 300px;
-}
-main .sobre-img {
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 220px;
 
-    justify-content: flex-end;
-    padding-left: 600px;
-    padding-bottom: 200px;
 }
 
+.sobre-texto h1 {
+    font-size: xx-large;
+}
+.sobre-img {
+    padding: 0px 50px 80px 90px;
+    width: 500px;
+    height: 280px;
+}
+
+#funcionalidades {
+    padding: 20px;
+    margin-top: -50px;
+    padding-left: -30px;
+    padding-right: -30px;
+
+}
+
+.grid-funcionalidades-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--cor-texto-header);
+}
+
+.recurso {
+    display: flex;
+    background-color: var(--cor-texto);
+    width: 100%; 
+    padding: 20px /*100px 20px 100px;*/;
+    padding-right: 100px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.recurso-texto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+    max-width: 100%;
+    white-space: normal;
+    font-weight: 200;
+    width: 100%;
+}
+
+.recurso-texto h2 {
+    width: 100%;
+    padding: 0px 40px 10px 0px;
+    padding-top: -10px;
+}
+.recurso-texto p {
+    font-weight: 400;
+}
+/* MAIN - FIM */
+
+/*FOOTER- COMEÇO*/
 footer {
+    padding: 10px;
     background-color: var(--cor-header-footer);
     color: var(--cor-texto-header);
+    margin-top: 100px;
+}
+
+footer h2{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: x-large;
+}
+.contato {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 10%;
+    align-items: end;
+}
+.email, .email-icon {
+    display: flex;
+    padding-right: 10px;
+}
+.telefone,
+.telefone-icon {
+    display: flex;
+    padding-right: 10px;
+}
+.twitter,
+.twitter-icon {
+    display: flex;
+    padding-right: 10px;
+}
+.instagram,
+.instagram-icon {
+    display: flex;
+    padding-right: 10px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 50px;
 }
