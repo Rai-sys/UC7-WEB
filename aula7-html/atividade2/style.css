@@ -22,38 +22,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #0d3b4a; /* Ajuste para combinar com seu design */
+    padding: 0.938rem 1.25rem;
+    background-color: var(--cor-header-footer);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-weight: bold;
     color: white;
 }
 
 .logo-img {
     background-image: none;
-    padding: 0px 160px 1px;
+    padding: 0rem 10rem 0.063rem;
 }
 .logo h2 {
     position: absolute;
-    padding: 45px 20px 11px 20px;
+    padding: 2.813rem 1.25rem 0.688rem 1.25rem;
     
 }
 
 nav {
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 nav ul {
     display: flex;
     flex-wrap: nowrap;
-    gap: 60px;
-    padding-top: 40px;
-    padding-left: 100px;
+    gap: 3.75rem;
+    padding-top: 2.5rem;
+    padding-left: 6.25rem;
 }
 nav li {
     list-style: none;
@@ -71,11 +71,11 @@ nav a:hover {
     font-weight: bold;
 }
 .login {
-    background-color: #15627F;
-    width: 90px;
-    height: 35px;
-    margin: 35px 100px 0px 0px;
-    border-radius: 3px;
+    background-color: var(--cor-texto);
+    width: 5.625rem;
+    height: 2.188rem;
+    margin: 2.188rem 6.25rem 0rem 0rem;
+    border-radius: 0.188rem;
 }
 
 .login a {
@@ -86,13 +86,13 @@ nav a:hover {
 
 .login a h4 {
     text-align: center;
-    padding: 5px 20px  10px 20px;
+    padding: 0.313 1.25rem  0.625rem 1.25rem;
 }
 /* CABEÇALHO - FIM */
 
 /* MAIN  - COMEÇO */
 main {
-    margin: 0px 20px 10px 20px;
+    margin: 0px 1.25rem 0.625rem 1.25rem;
 }
 
 #sobre {
@@ -106,9 +106,9 @@ main {
     flex-direction: column;
     font-size: large;
     text-align: left;
-    gap: 15px;
-    padding-top: 20px;
-    padding-bottom: 220px;
+    gap: 0.938rem;
+    padding-top: 1.20rem;
+    padding-bottom: 13.75rem;
 
 }
 
@@ -116,26 +116,26 @@ main {
     font-size: xx-large;
 }
 .sobre-img {
-    padding: 0px 50px 80px 90px;
-    width: 500px;
-    height: 280px;
+    padding: 0rem 3.125rem 5rem 5.625rem;
+    width: 31.25rem;
+    height: 17.5rem;
 }
 
 #funcionalidades {
-    padding: 20px;
-    margin-top: -50px;
-    padding-left: -30px;
-    padding-right: -30px;
+    padding: 1.25rem;
+    margin-top: -3.125rem;
+    padding-left: -1.875rem;
+    padding-right: -1.875rem;
 
 }
 
 .grid-funcionalidades-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 20px;
+    gap: 1.25rem;
     justify-items: stretch;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     color: var(--cor-texto-header);
 }
@@ -144,9 +144,9 @@ main {
     display: flex;
     background-color: var(--cor-texto);
     width: 100%; 
-    padding: 20px /*100px 20px 100px;*/;
-    padding-right: 100px;
-    border-radius: 5px;
+    padding: 1.25rem /*100px 20px 100px;*/;
+    padding-right: 6.25rem;
+    border-radius: 0.313rem;
     box-sizing: border-box;
 }
 
@@ -163,8 +163,8 @@ main {
 
 .recurso-texto h2 {
     width: 100%;
-    padding: 0px 40px 10px 0px;
-    padding-top: -10px;
+    padding: 0rem 2.5rem 0.625rem 0rem;
+    padding-top: -0.625rem;
 }
 .recurso-texto p {
     font-weight: 400;
@@ -173,15 +173,15 @@ main {
 
 /*FOOTER- COMEÇO*/
 footer {
-    padding: 10px;
+    padding: 0.625rem;
     background-color: var(--cor-header-footer);
     color: var(--cor-texto-header);
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 
 footer h2{
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: 1.25rem;
+    margin-left: 0.625rem;
     font-size: x-large;
 }
 .contato {
@@ -192,25 +192,84 @@ footer h2{
 }
 .email, .email-icon {
     display: flex;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 .telefone,
 .telefone-icon {
     display: flex;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 .twitter,
 .twitter-icon {
     display: flex;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 .instagram,
 .instagram-icon {
     display: flex;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 footer p {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 3.125rem;
+}
+
+main .login-container {
+    text-align: center;
+    border-radius: 0.625rem;
+    box-shadow: 0.313rem 0.313rem rgba(13, 59, 74, 0.2);
+    margin: 6.25rem 25rem 6.25rem 25rem;
+    padding: 5rem 0.625rem;
+    background-color: rgb(230, 228, 228);
+}
+
+main .login-container h1 {
+    position: relative;
+    bottom: 3.438rem;
+    margin: 0.625rem;
+    font-weight: 700;
+    font-weight: bolder;
+}
+main .email-senha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+    text-align: left;
+    padding-right: 11.25rem;
+}
+main label {
+    position: relative;
+    left: 4.375rem;
+    text-align: center;
+    background-color: var(--cor-texto);
+    border-radius: 0.438rem;
+    color: var(--cor-texto-header);
+    width: 3.75rem;
+    height: 1.875rem;
+    padding-top: 0.188rem;
+}
+main input {
+    margin-left: 6.25rem;
+    border-radius: 0.375rem;
+    height: 1.875rem;
+    width: 15.625rem;
+    text-align: center;
+}
+.entrar-button {
+    background-color: var(--cor-header-footer);
+    margin: 4.375rem 12.5rem 0rem 12.5rem;
+    padding: 0.313rem 0.188rem 0.313rem 0.188rem;
+    border-radius: 1.25rem;
+}
+.entrar-button a {
+    /* position: relative;
+    bottom: 40px; */
+    color: var(--cor-texto-header);
+    text-decoration: none;
+    font-size: medium;
+}
+
+.entrar-button h3 {
+    font-weight: 500;
 }
