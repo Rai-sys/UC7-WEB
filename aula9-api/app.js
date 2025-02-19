@@ -48,7 +48,7 @@ app.post('/', (requisicao, resposta) => {
 // http://localhost/4000/1
 app.put('/:id', (requisicao, resposta) => {
   try {
-    const id = requisicao.params;  //parametro = tudo que tem na url
+    const id = requisicao.params.id;  //parametro = tudo que tem na url
     const produto = produtos.find(elemento => elemento.id === id);
     if (!produto) {
       return resposta.status(404).json({msg: "Produto não encontrado"})
