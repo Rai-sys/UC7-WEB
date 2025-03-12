@@ -7,12 +7,12 @@ import Main from '../../components/Main/Main'
 
 function Home() {
     return (
-        <div className={style.home}>
+        <>
             <Header />
             <Main />
             <Aside />
             <Footer />
-        </div>
+        </>
     )
 };
 

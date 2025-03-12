@@ -6,10 +6,8 @@ import Home from './pages/Home/Home'
 function App() {
 
   return (
-    <div>
-      < Home/>
-    </div>
+    <Home />
   )
 }
 
-export default App
+export default App;

@@ -36,3 +36,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.main section {
+    flex: 1;
+    margin: var(--margin-padrao);
+    padding: var(--padding-padrao);
+    background-color: var(--cor-secao);
+    border: var(--border-size) solid var(--cor-borda);
+    border-radius: var(--border-radius);
+}
