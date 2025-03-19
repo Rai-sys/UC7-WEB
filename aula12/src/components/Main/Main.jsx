@@ -11,9 +11,9 @@ function Main() {
                 bandas.map((banda, index) => ( /* index para buscar o componente(banda) na const*/
                     
                         <section>
-                            <Link key={banda.id} to={`band/${banda.id}`}>
+                           
                             <Band key={index} {...banda} />
-                            </Link>
+                            <Link key={banda.id} to={`band/${banda.id}`}> Leia mais sobre... </Link>
                         </section>
                   
                 ))
