@@ -11,17 +11,28 @@ function BandDetalhes() {
     const { id } = useParams();
     const band = bandas.find((b) => b.id === parseInt(id));
 
-    if (!band) return (<h2> Banda não encontrada. </h2>)
+    if (!band) {
+        return (
+            <>
+                <Header />
+                <h2> Nenhuma banda encontrada </h2>
+                <Aside />
+            </>
+        );
+    }
     return (
         <>
-            <div>
-                <Header />
-                <Band className={style.banda} {...band} />
-                <Aside />
-                <Footer />
+            <Header />
+            <div className={style.band}>
+                <Band {...band} />
             </div>
+            <Aside />
+            <Footer />
         </>
-    );
+    )
+
 }
+
+
 
 export default BandDetalhes;
