@@ -6,6 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const router = require('../back-end/modules/routes/AlunoRoutes');
 
+// conexao entre as api's
 app.use(cors());
 
 app.use(express.json())
