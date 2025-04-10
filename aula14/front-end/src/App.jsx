@@ -1,13 +1,13 @@
 import react from 'react'
 import './App.css'
-import ListarAlunos from './pages/ListarAlunos';
+import GerenciarAlunos from './pages/gerenciarAlunos/GerenciarAlunos';
 
 function App() {
   return (
     <>
-    <ListarAlunos />
+    <GerenciarAlunos />
     </>
   )
 }
 
-export default App
+export default App;
