@@ -1,5 +1,5 @@
-
 import React, {useState} from "react";
+import style from './CadastrarAluno.module.css';
 import { criar } from "../../../services/alunoService";
 
 function CadastrarAluno() {
