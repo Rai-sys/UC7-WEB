@@ -19,6 +19,34 @@ function ListarCursos() {
    return (
       <>
          <h1> Listagem de Cursos </h1>
+         {
+            cursos.length === 0 ?
+            (
+               <p> Nenhum curso cadastrado no sistema. </p>
+            )
+            :
+            (
+               <table>
+                  <thead>
+                     <tr>
+                        <th> Código </th>
+                        <th> Nome </th>
+                     </tr>
+                  </thead>
+
+                  <tbody>
+                     {
+                        cursos.map((c)=> (
+                           <tr key={c.cod_curso}>
+                              <td> {c.cod_curso} </td>
+                              <td> {c.nome} </td>
+                           </tr>
+                        ))
+                     }
+                  </tbody>
+               </table>
+            )
+         }
       </>
    )
 }
