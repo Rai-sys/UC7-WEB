@@ -1,15 +1,28 @@
 import { useState, useEffect } from "react";
 import CursoService from "../../services/cursoService";
 
-function CursoForm() {
+function CursoForm({ cursoEditando, aoSalvar }) { // Duas props
    const [cod_curso, setCod_curso] = useState('');
    const [nome, setNome] = useState('');
 
-   // Função para criar um curso
+   useEffect (() => {
+      if (cursoEditando) {
+         setCod_curso(cursoEditando.cod_curso);
+         setNome(cursoEditando.nome);
+      }
+   }, [cursoEditando]);
+
+   // Função para criar ou atualizar um curso
    const handleSubmit = async(e) => {
       e.preventDefault(); // evita o recarregamento da página
-      const data = await CursoService.criar({cod_curso, nome});
-      console.log(data);
+      
+      if (cursoEditando) {
+         const cursoAtualizar = await CursoService.atualizar(cod_curso, {nome});
+      } else {
+         const data = await CursoService.criar({ cod_curso, nome });
+         console.log(data);
+      }
+      
       setNome('');
       setCod_curso('');
    };
